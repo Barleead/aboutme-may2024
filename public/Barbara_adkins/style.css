@@ -1,0 +1,22 @@
+main {
+    background-color: bisque;
+    border: 3px;
+}
+
+head {
+    text-align: center;    
+}
+
+h1 {
+    color: rgb(188, 12, 12);
+    text-align: center;
+}
+
+p {
+    color: rgb(240, 87, 117); 
+}
+
+li{
+    color:rgb(20, 129, 58);
+    
+}
