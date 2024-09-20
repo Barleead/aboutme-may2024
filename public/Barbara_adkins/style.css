@@ -32,3 +32,18 @@ li {
   text-align: center;
   font-size: 18px;
 }
+
+button.game {
+  position: absolute;
+  left: 20%;
+  bottom: 20%;
+  font-size: 24 px;
+}
+
+button {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+}

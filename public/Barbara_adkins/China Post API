@@ -1,0 +1,54 @@
+//  Doesn't work yet... not sure whats wrong... Got the post from China posts site.      Also, I need to create the api key into git-ignore.
+
+<div>
+        var axios = require('axios');
+        var data = JSON.stringify({
+        "shipments": [
+        {
+          "trackingId": "EE10021942088880001030003D0N",
+          "destinationCountry": "Canada"
+        }
+        ],
+        "language": "en",
+        "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI1M2NmZjg0MC03NWJhLTExZWYtOWYxOS1kYmQzYTViMDc5MDMiLCJzdWJJZCI6IjY2ZWFjOGNjYjc3MmE0NGMwODM2ZmI3MCIsImlhdCI6MTcyNjY2Mjg2MH0.7uPG483Rg3Q2sCjVSdFAm-OGMo1PUlNnHP7cc9c12Sw"
+        });
+        
+        
+        var config = {
+          method= 'post',
+          url: 'https://parcelsapp.com/api/v3/shipments/tracking',
+          headers: { 
+           'Content-Type': 'application/json'
+          },
+          data : data
+        };
+        
+        
+        axios(config)
+          .then(function (response) {
+          console.log(JSON.stringify(response.data));
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+        
+        var axios = require('axios');
+        
+        var config = {
+          method: 'get',
+          url: 'https://parcelsapp.com/api/v3/shipments/tracking?uuid=<UUID from Step 1>&apiKey=<YOUR API KEY>',
+          headers: { 
+            'Accept': 'application/json'
+          }
+        };
+        
+        axios(config)
+          .then(function (response) {
+            console.log(JSON.stringify(response.data));
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+        
+
+      </div> -->
